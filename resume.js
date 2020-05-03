@@ -1,10 +1,19 @@
-var n=document.getElementsByClassName("name");
-function action(){
- n[1].innerHTML=n[0].value; 
- console.log(n[0].value);  
+function show()
+{
+   
+    let pElement=document.getElementsByClassName(this.className)[1];
+    pElement.innerHTML=this.value;
+
+    
+    
+}
+var textareas=document.getElementsByTagName("textarea");
+
+for(let textarea of textareas )
+{
+    
+    textarea.addEventListener("keyup",show);
+
 }
 
-
-console.log(n[0].value);
-n[0].addEventListener("keyup",action);
 
