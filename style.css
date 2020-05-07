@@ -7,33 +7,18 @@
   background-color:  rgb(204,204,204);
 }
 */
-div.resume-generator{
-  background-color: aliceblue;
-  border:solid;
-  display: flex;
 
-}
-div.resume-container{
-  
- 
-  width :50%;
-  
-  
-}
-div.separator{
-  border:solid;
-  
-}
-div.generator-container{
-  width:50%;
-}
+
 h3{
+  margin-top: 0;
+  
   margin-bottom: 5px;
   background-color: #eaeae1;
 
 
 }
 h5{
+
   text-decoration: underline;
 }
 ul{
@@ -43,10 +28,12 @@ ul{
 table , th,td{
   border:1px solid black;
   border-collapse: collapse;
+  padding: 5px;
 }
 .cont{
-  /*border: 1px solid red;*/
-  margin-bottom: 15px;
+ 
+word-wrap:break-word;
+margin-top: 5px;
 
 }
 input{
@@ -55,21 +42,34 @@ input{
 
 div.resume{
   background-color: white;
-  width:20cm;
+  
 padding : 30px;
 text-align: justify;
-margin:0 auto;
+
 border: 2px solid black;
 }
-header{
+div.generator{
+  background-color: white;
+ 
+padding : 30px;
+text-align: justify;
+
+border: 2px solid black;
+
+}
+header.intro{
   display: flex;
   padding: 5px;
+  margin-bottom: 0px;
+ 
+  
 }
-div.left {
+.resume div.left {
   width: 60%;
 /*padding: 20px;*/
+
 }
-div.right{
+.resume div.right{
  width: 40%;
 /*  text-align: right;*/
 display: flex;
@@ -79,29 +79,28 @@ justify-content: center;
 
 }
 
-div.objective{
-  width: auto;
-}
-.education > table,th,td{
+
+
+
+.resume .education table,.resume .education th,.resume .education td{
   padding: 5px;
   text-align: center;
 }
-
-.projects table,th,td{
+.generator .education table,.generator .education th,.generator .education td{
+  padding: 2px;
+  text-align: center;
+}
+.projects table,.project th,.project td{
+  
 text-align: left;
 }
 
-.exp .company{
+.resume .exp .company{
   display: flex;
-  justify-content:space-between;
-
+  justify-content: space-between;
+  
 }
-.exp .duration{
-  position: relative;
-  left:-10px;
-  top:-20px;
 
-}
 .exp .company-1{
   margin-left: 30px;
 
@@ -109,3 +108,43 @@ text-align: left;
 p{
   display: inline;
 }
+.form-control{
+  display:inline-block;
+}
+#hi{
+  display:none;
+  background-color:black;
+  border: solid;
+
+}
+header .form-group{
+  padding:0;
+  margin:0;
+}
+h3.objective{
+  margin-top:0;
+}
+#idobjective{
+  
+  margin-top:1px;
+  padding:0;
+}
+ul,li{
+  padding-top: 5px;
+}
+table{
+  width:100%;
+}
+@media only screen and (max-width: 768px) {
+  header.intro{
+    flex-direction: column;
+  }
+  .resume div.right{
+    align-items: flex-start;
+  }
+  .resume .exp .company{
+    flex-direction: column;
+  }
+}
+
+

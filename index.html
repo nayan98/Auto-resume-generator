@@ -5,46 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script></script>
   </head>
   <body>
-  <div class="resume-generator">
-    <div class="generator-container">
-      <div class="resume">
+  <div class="container-fluid">
+    <div class="row">
+    
+      <div class="generator col-md">
 
+<div class="container-fluid">
+  
+  <div class="container-fluid ">
+    <div class="row">
+      
 
-
-        <header class="cont intro">
         
-          <div class="left">
-        <div class="name">
-          Name:&nbsp;&nbsp;&nbsp;&nbsp<textarea name="" class="name-p" cols="20" rows="1"></textarea>
+        
+          <div class="col-xl-6">
+            
+            <form>
+              
+              <div class="form-group row">
+                
+                <label class="col-sm-3 col-form-label" >Name:</label>
+              
+                <div class="col-xl-9">
+                  
+                  <input type="text" class="form-control form-control-sm name-p"  placeholder="Enter name" >
+                </div>
+              </div>
+              <div class="form-group row">
+                
+                <label class="col-xl-3 col-form-label">College:</label>
+              
+                <div class="col-xl-9">          
+                  <input type="text" class="form-control form-control-sm college-p"  placeholder="Enter College" >
+                </div>
+              
+              </div>
+              <div class="form-group row">
+                <label class="col-xl-3 col-form-label" >Stream:</label>
+                <div class="col-xl-9">          
+                  <input type="text" class="form-control form-control-sm stream-p"  placeholder="Enter Stream/Branch" >
+                </div>
+              </div>
+            
+              </form>
+        
           </div>
-        <div class="college">College:&nbsp<textarea name="" class="college-p" cols="20" rows="1"></textarea>
+          <div class="col-xl">
+            <form>
+              <div class="form-group row">
+                <label class="col-xl-3 col-form-label" >Phone:</label>
+                <div class="col-xl-9">
+                  <input type="text" class="form-control form-control-sm contact-p"  placeholder="Enter Contact no." >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-xl-3 col-form-label" >Email:</label>
+                <div class="col-xl-9">          
+                  <input type="text" class="form-control form-control-sm email-p"  placeholder="Enter E-mail" >
+                </div>
+              </div>
+              
+              </form>
           </div>
-        <div class="stream">Stream:&nbsp&nbsp;<textarea name="" class="stream-p" cols="20" rows="1"></textarea>
         
-        </div>
+      </div>
+      </div>
         
-          </div>
-          <div class="right">
-          <div class="contact">  <label >Phone: <textarea name="" class="contact-p" cols="20" rows="1"></textarea></label></div>
-        <div class="email"><label >E-mail: <textarea name="" class="email-p" cols="20" rows="1"></textarea></label>
-        
-        
-        </div>
-          </div>
-        </header>
-        <div class="cont objective">
-          <h3>OBJECTIVE</h3>
+        <div class="cont objective ">
+          <h3 id="idobjective">OBJECTIVE</h3>
           
-            <textarea name="" class="objective-p" cols="93" rows="3"></textarea>
-          </ul>
+          
+            <div class="form-group">
+              
+              <textarea class="form-control  objective-p" rows="2" ></textarea>
+            </div>
+         
+          
         
           </div>
         
       
         <div class="cont education">
           <h3>EDUCATION</h3>
+          <div class="table-responsive">
+    
           <table>
             <tr>
               <th>Examination</th>
@@ -54,43 +112,107 @@
               <th>CGPA</th>
             </tr>
             <tr>
-              <td><textarea name="" class="exam-1-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="college-1-p" cols="30" rows="1"></textarea></td>
-              <td><textarea name="" class="university-1-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="passyear-1-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="cgpa-1-p" cols="10" rows="1"></textarea></td>
+              <td>       
+                <input type="text" class="form-control form-control-sm exam-1-p">
+              </td>
+              <td>          
+                <input type="text" class="form-control form-control-sm college-1-p">
+              </td>
+              <td>         
+                <input type="text" class="form-control form-control-sm university-1-p">
+              </td>
+              <td>          
+                <input type="text" class="form-control form-control-sm passyear-1-p">
+              </td>
+              <td>         
+                <input type="text" class="form-control form-control-sm cgpa-1-p">
+              </td>
             </tr>
             <tr>
-              <td><textarea name="" class="exam-2-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="college-2-p" cols="30" rows="1"></textarea></td>
-              <td><textarea name="" class="university-2-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="passyear-2-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="cgpa-2-p" cols="10" rows="1"></textarea></td>
-        
+              <td>
+              
+                
+                          
+                <input type="text" class="form-control form-control-sm exam-2-p">
+              
+            
+          
+          </td>
+              <td>         
+                <input type="text" class="form-control form-control-sm college-2-p"   >
+              </td>
+              <td>          
+                <input type="text" class="form-control form-control-sm university-2-p"   >
+              </td>
+              <td>          
+                <input type="text" class="form-control form-control-sm passyear-2-p"   >
+              </td>
+              <td>          
+                <input type="text" class="form-control form-control-sm cgpa-2-p"   >
+              </td>
             </tr>
             <tr>
-              <td><textarea name="" class="exam-3-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="college-3-p" cols="30" rows="1"></textarea></td>
-              <td><textarea name="" class="university-3-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="passyear-3-p" cols="10" rows="1"></textarea></td>
-              <td><textarea name="" class="cgpa-3-p" cols="10" rows="1"></textarea></td>
-        
-            </tr>
-          </table>
-        
+              <td>
+              
+                
+                        
+                <input type="text" class="form-control form-control-sm exam-3-p">
+              
+            
+          
+          </td>
+              <td>         
+                <input type="text" class="form-control form-control-sm college-3-p"   >
+              </td>
+              <td>         
+                <input type="text" class="form-control form-control-sm university-3-p"   > 
+              </td>
+              <td>          
+                <input type="text" class="form-control form-control-sm  passyear-3-p"   >
+              </td>
+              <td>          
+                <input type="text" class="form-control form-control-sm cgpa-3-p"   >
+              </td>
+            </tr>         
+           </table>
+          </div>
         </div>
         <div class="cont projects">
           <h3>PROJECTS</h3>
-          <table class="t">
+          <div class="table-responsive">
+          <table>
             <tr>
               <th>Project Title</th>
             </tr>
             <tr>
               <td>
-                <textarea name="" class="project-1-title-p" cols="20" rows="1"></textarea> 
-                <ul>
-                  <li><textarea name="" class="project-1-desc-1-p" cols="86" rows="1"></textarea></li>
-                  <li> <textarea name="" class="project-1-desc-2-p" cols="86" rows="1"></textarea> </li>
+                
+                <div class="row">
+                  <div class="col-md-5">
+                <input type="text" class="form-control form-control-sm project-1-title-p" > 
+              </div>
+              </div>
+              
+              <ul class="list-unstyled">
+                  <li>
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="text" class="form-control form-control-sm project-1-desc-1-p" >
+                      </div>
+                      
+                    </div>
+                   
+                    
+                  </li>
+                <li>
+                   
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="text" class="form-control form-control-sm project-1-desc-2-p" >
+                    </div>
+                    
+                  </div>
+                  </li>
                 </ul>
         
         
@@ -99,49 +221,115 @@
             </tr>
             <tr>
               <td>
-                <textarea name="" class="project-2-title-p" cols="20" rows="1"></textarea> 
-                <ul>
-                  <li><textarea name="" class="project-2-desc-1-p" cols="86" rows="1"></textarea></li>
-                  <li> <textarea name="" class="project-2-desc-2-p" cols="86" rows="1"></textarea> </li>
-                  <li> <textarea name="" class="project-2-desc-3-p" cols="86" rows="1"></textarea> </li>
+                
+                <div class="row">
+                  <div class="col-md-5">
+                <input type="text" class="form-control form-control-sm project-2-title-p" > 
+              </div>
+              </div>
+              
+              <ul class="list-unstyled">
+                  <li>
+                   
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="text" class="form-control form-control-sm project-2-desc-1-p" >
+                      </div>
+                      
+                    </div>
+                  </li>
+                <li>
+                   
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="text" class="form-control form-control-sm project-2-desc-2-p" >
+                    </div>
+                    
+                  </div>
+                  </li>
                 </ul>
+        
         
         
               </td>
             </tr>
           </table>
+        </div>
         
         </div>
         <div class="cont tech-skills">
           <h3>TECHNNICAL SKILLS</h3>
-          <ul>
-            <li><textarea name="" class="tech-skill-1-p" cols="20" rows="1"></textarea> : <textarea name="" class="tech-skill-1-desc-p" cols="64" rows="1"></textarea> </li>
-            <li><textarea name="" class="tech-skill-2-p" cols="20" rows="1"></textarea> : <textarea name="" class="tech-skill-2-desc-p" cols="64" rows="1"></textarea> </li>
-            <li><textarea name="" class="tech-skill-3-p" cols="20" rows="1"></textarea> : <textarea name="" class="tech-skill-3-desc-p" cols="64" rows="1"></textarea> </li>
-          </ul>
+          
+            
+          
+            <div class="row">
+              <div class="col-5"><input type="text" class="form-control form-control-sm tech-skill-1-p"></div>
+            <div class="col-1">:</div>
+            <div class="col-5">
+            <input type="text" class="form-control form-control-sm tech-skill-1-desc-p"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-5"><input type="text" class="form-control form-control-sm tech-skill-2-p"></div>
+          <div class="col-1">:</div>
+          <div class="col-5">
+          <input type="text" class="form-control form-control-sm tech-skill-2-desc-p"></div>
+        </div>
+        <div class="row">
+          <div class="col-5"><input type="text" class="form-control form-control-sm tech-skill-3-p"></div>
+        <div class="col-1">:</div>
+        <div class="col-5">
+        <input type="text" class="form-control form-control-sm tech-skill-3-desc-p"></div>
+      </div>
+               
+          
         
         </div>
         <div class="cont exp">
           <h3>EXPERIENCE</h3>
-          <ul>
+          <ul class="list-unstyled">
         
-        <li><textarea name="" class="exp-company-1-name-p" cols="20" rows="1"></textarea>
-          <div class="company">
-        
-        
-        
-          <div class='company-postion' style="font-style:italic;margin-bottom:4px;font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <textarea name="" class="exp-company-1-position-p" cols="20" rows="1"></textarea> 
+        <li><div class="row">
+          <div class="col-4">
+            <input type="text" class="form-control form-control-sm exp-company-1-name-p" >
           </div>
-          <div class="duration">
-            <textarea name="" class="exp-company-1-duration-p" cols="20" rows="1"></textarea>
         
-          </div>
+        </div>
+          
+        
+        
+        
+          <div class='company'>
+            
+            <div class="row">
+            <div class="col-xl-4 company-position">
+              <input type="text" class="form-control form-control-sm exp-company-1-position-p" >
+            </div> 
+          <div class="col-xl-4 dummy"></div>
+          
+            <div class="col-xl-4 company-duration">
+              <input type="text" class="form-control form-control-sm exp-company-1-duration-p" >
             </div>
+      
         
-          <ul class="company-1">
-            <li><textarea name="" class="exp-company-1-desc-1-p" cols="83" rows="1"></textarea></li>
-            <li><textarea name="" class="exp-company-1-desc-2-p" cols="83" rows="1"></textarea></li>
-            <li><textarea name="" class="exp-company-1-desc-3-p" cols="83" rows="1"></textarea></li>
+          </div>
+          
+            </div>
+            
+        
+          <ul class="company-1 list-unstyled">
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm exp-company-1-desc-1-p" >
+              </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm exp-company-1-desc-2-p" >
+              </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm exp-company-1-desc-3-p" >
+              </div></li>
           </ul>
         </li>
         
@@ -151,12 +339,37 @@
         </div>
         <div class="cont achievement">
           <h3>ACHIEVEMENT</h3>
-          <ul>
-            <li><textarea name="" class="achievement-1-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="achievement-2-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="achievement-3-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="achievement-4-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="achievement-5-p" cols="87" rows="1"></textarea></li>
+          <ul class="list-unstyled">
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm achievement-1-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm achievement-2-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm achievement-3-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm achievement-4-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm achievement-5-p" >
+              </div>
+              
+            </div></li>
             
            
           </ul>
@@ -165,20 +378,50 @@
         </div>
         <div class="cont por">
           <h3>POSITION OF RESPONSIBILITY</h3>
-          <ul>
-            <li><textarea name="" class="por-1-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="por-2-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="por-3-p" cols="87" rows="1"></textarea></li>
+          <ul class="list-unstyled">
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm por-1-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm por-2-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm por-3-p" >
+              </div>
+              
+            </div></li>
           </ul>
         
         
         </div>
         <div class="cont coco">
           <h3>CO-CURRICULAR ACTIVITIES AND EXTRA CURRICULAR ACTIVITIES</h3>
-          <ul>
-            <li><textarea name="" class="coco-1-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="coco-2-p" cols="87" rows="1"></textarea></li>
-            <li><textarea name="" class="coco-3-p" cols="87" rows="1"></textarea></li>
+          <ul class="list-unstyled">
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm coco-1-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm coco-2-p" >
+              </div>
+              
+            </div></li>
+            <li><div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control form-control-sm coco-3-p" >
+              </div>
+              
+            </div></li>
           </ul>
         
         
@@ -186,15 +429,17 @@
         </div>
         
 
-    </div>
     
-<div class="separator"></div>
-    <div class="resume-container">
-      <div class="resume">
+    
+      </div>
+
+    
+      <div class="resume col-xl-6">
 
 
 
 <header class="cont intro">
+  
 
   <div class="left">
 <div class="name"><p class="name-p">NAYAN SINGHAI</p></div>
@@ -212,6 +457,7 @@
 
 </div>
   </div>
+
 </header>
 <div class="cont objective">
   <h3>OBJECTIVE</h3>
@@ -224,6 +470,7 @@
 
 <div class="cont education">
   <h3>EDUCATION</h3>
+  <div class="table-responsive">
   <table>
     <tr>
       <th><p>Examination</p></th>
@@ -254,6 +501,7 @@
       <td><p class="cgpa-3-p">10</p></td>
     </tr>
   </table>
+</div>
 
 </div>
 <div class="cont projects">
@@ -280,7 +528,7 @@
         <ul>
           <li><p class="project-2-desc-1-p">Predicted one of the seven (happy, surprise, angry, disgust, fear, sad & neutral) basic facial emotions.</p></li>
           <li><p class="project-2-desc-2-p">Trained a deep convolutional neural network for this purpose and achieved an efficiency of 93.1\%. </p></li>
-          <li><p class="project-2-desc-3-p">Dataset used: JAFFE dataset (213 facial images of 10 japanese models, further expanded to 639 images).</p></li>
+          
         </ul>
 
       </td>
@@ -292,7 +540,7 @@
   <h3>TECHNNICAL SKILLS</h3>
   <ul>
     <li><b><p class="tech-skill-1-p">Programming Languages :</p></b><p class="tech-skill-1-desc-p"> C, C++, python</p></li>
-    <li><b><p class="tech-skill-2-p">Core :</p></b> <p class="tech-skill-2-desc-p"> Structures , Analysis and Design of Algorithms , Machine Learning ( beginner )</p></li>
+    <li><b><p class="tech-skill-2-p">Core :</p></b> <p class="tech-skill-2-desc-p"> Structures , Analysis and Design of Algorithms , Machine Learning (beginner)</p></li>
     <li><b><p class="tech-skill-3-p">Web Development :</p></b><p class="tech-skill-3-desc-p"> PHP , Flask</p></li>
   </ul>
 
@@ -301,12 +549,13 @@
   <h3>EXPERIENCE</h3>
   <ul>
 
-<li><b><p class="exp-company-1-name-p">JP MORGAN & CHASE</p></b>
+<li>
+  <b><p class="exp-company-1-name-p">JP MORGAN & CHASE</p></b>
   <div class="company">
 
 
 
-  <div class='company-postion' style="font-style:italic;margin-bottom:4px;font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="exp-company-1-position-p">Summer Intern (Mumbai)
+  <div class='company-postion' style="font-style:italic;margin-bottom:4px;font-weight:bold;"><p class="exp-company-1-position-p">Summer Intern (Mumbai)
   </p></div>
   <div class="duration">
     <p class="exp-company-1-duration-p">
@@ -315,6 +564,7 @@
 
   </div>
     </div>
+  
 
   <ul class="company-1">
     <li><p class="exp-company-1-desc-1-p">Created CHATBOT For CARDS (corporate and regulatory data services).</p></li>
@@ -351,7 +601,7 @@
 
 </div>
 <div class="cont coco">
-  <h3>CO-CURRICULAR ACTIVITIES AND EXTRA CURRICULAR ACTIVITIES</h3>
+  <h3>CO - CURRICULAR ACTIVITIES AND EXTRA CURRICULAR ACTIVITIES</h3>
   <ul>
     <li><p class="coco-1-p">Competitive programming</p></li>
     <li><p class="coco-2-p">177 Rank Out of 2902 (Silver Medal) Participants in HourRank 23 Organised by HackerRank.</p></li>
@@ -361,10 +611,10 @@
 
 </div>
 </div>
-    </div>
-    
+  </div>
+  </div>
    
-</div>
+ 
 <script src="resume.js" type="text/javascript"></script>
   </body>
 </html>
