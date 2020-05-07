@@ -32,7 +32,7 @@ table , th,td{
 }
 .cont{
  
-word-wrap:break-word;
+word-wrap: break-word;
 margin-top: 5px;
 
 }
@@ -141,6 +141,10 @@ table{
   }
   .resume div.right{
     align-items: flex-start;
+    width: 100%;
+  }
+  .resume div.left{
+    width: 100%;
   }
   .resume .exp .company{
     flex-direction: column;
